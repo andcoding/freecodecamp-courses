@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="desing.css">
+</head>
+
+<body>
+
+    <h1 id="title">Survey Form</h1>
+
+    <div id='center'>
+
+            <p id="description">Help us improve our English learning online platform.</p>        
+
+        <form action="" id="survey-form">
+
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="name">* Name: </label>
+                </div>
+
+                <div class="rightTab">
+                    <input autofocus type="text" required name="name" id="name" class="input-field" placeholder="Your name">
+                </div>
+
+            </div>
+
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="email-label" for="email">* Email:</label>
+                </div>
+
+                <div class="rightTab">
+
+                    <input type="email" required name="email" id="email" class="input-field" placeholder="Your email">
+                </div>
+
+            </div>
+
+
+            <div class="rowTab">
+                <div class="labels">
+
+                    <label id="number-label" for="age">* Age:</label>
+                </div>
+                <div class="rightTab">
+                    <input type="number" name="age" id="number" min="10" max="115" class="input-field"
+                        placeholder="Age">
+                </div>
+            </div>
+
+            <div class="rowTab">
+
+                <div class="labels">
+                    <label for="most-like">What part of the English course you enjoyed the most?</label>
+                </div>
+
+                <div class="rightTab">
+                    <select id="most-like" name="most-like" class="dropdown">
+                        <option disabled selected value>Select an option</option>
+                        <option value="conversation">Conversation</option>
+                        <option value="practice">Game Exercise</option>
+                        <option value="multiplechoice">Multiple Choice</option>
+                        <option value="Pronunciation">Pronunciation</option>
+                        <option value="songlub">Song Club</option>
+
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="userRatings">*How likely is that you would recommend Briglish to a friend?</label>
+                </div>
+
+                <div class="rightTab">
+                    <ul style="list-style: none;">
+                        <li class="radio">
+                            <label>Definitely
+                                <input type="radio" name="radio-buttons" value="1" class="userRatings">
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>Maybe
+                                <input type="radio" name="radio-buttons" value="2" class="userRatings">
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>Not sure
+                                <input type="radio" name="radio-buttons" value="3" class="userRatings">
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="currentPos">Which option best describe your status/role?</label>
+
+                </div>
+
+                <div class="rightTab">
+                    <select name="currentPos" id="dropdown" class="dropdown">
+                        <option disabled value="Select an option">Select an option</option>
+                        <option value="student">student</option>
+                        <option value="teacher">teacher</option>
+                        <option value="visitor">visitor</option>
+                        <option value="preferNo">Prefer not to say</option>
+                        <option value="other">Otherr</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="preferences">
+                        Things that should be improved within the Briglish teaching platform?
+                    </label>
+                </div>
+                    <div class="rightTab">
+                                            
+                        <ul id="preferences" style="list-style: none;">
+                            <li class="checkbox">
+                                <label>
+                                    <input name="prefer" value="1" type="checkbox" class="userRatings">
+                                    Every day conversation vocabulary
+                                </label>
+                            </li>
+                            <li class="checkbox">
+                                <label>
+                                    <input name="prefer" value="2" type="checkbox" class="userRatings">
+                                    Students decide on time management
+                                </label>
+                            </li>
+                                <li class="checkbox">
+                            <label>
+                                    <input name="prefer" value="3" type="checkbox" class="userRatings">
+                                    Improve user experience
+                            </label>
+                            </li>
+
+                                <li class="checkbox">
+                                        <label>
+                                    <input name="prefer" value="4" type="checkbox" class="userRatings">
+                                    Include more listening skills exercises
+                            </label>
+                            </li>
+
+                            <li class="checkbox">
+                                <labe>
+                                    <input name="prefer" value="5" type="checkbox" class="userRatings">
+                                    Applied Accessibility 
+                                    </label>
+                            </li>
+
+                            <li class="checkbox">
+                                <label>
+                                    <input name="prefer" value="6" type="checkbox" class="userRatings">
+                                    Track students progress and payment method
+                                </label>
+                            </li>
+                        
+
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="rowTab">
+                        <div class="labels">
+                            <label for="comments">Any Comments or suggestions?</label>
+                        </div>
+                        <div class="rightTab">
+                            <textarea id="comments" class="input-field" style="height: 50px; resize: vertical;" name="comment"
+                                placeholder="Enter you comments here...."></textarea>
+                
+                        </div>
+                    </div>
+
+                    <button id="submit" type="submit">Submit</button> 
+
+    </form>
+    </div>
+
+</body>
+</html>
