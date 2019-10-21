@@ -22,6 +22,11 @@ body {
     width: 280px;
 
 }
+#comments{
+    height: 50px; 
+    resize: vertical;
+}
+
 #preferences{
     list-style: none;
 }
@@ -38,7 +43,7 @@ body {
     vertical-align: top;
     margin-top: 10px;
 }
-.rightTab{
+.righ-tab{
     display: inline-block;
     text-align: left;
     width: 48%;
@@ -52,8 +57,8 @@ body {
     margin-left: 10px;
 }
 .userRatings, input[type="checkbox"]{
-float: left;
-margin-right: 5px;
+    float: left;
+    margin-right: 5px;
 }
 .radio, .checkbox{
     display: block;
@@ -69,7 +74,7 @@ margin-right: 5px;
     margin-bottom: 10px;
 }
 #submit{
-    background-color: rgb(122, 253, 247);
+    background-color: #7afdf7;
     margin: 10px;
     width: 90px;
     height: 36px;
