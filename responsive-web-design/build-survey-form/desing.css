@@ -1,14 +1,12 @@
 
 body {
-    background-color: rgb(122, 253, 247);
+    background-color:#7afdf7;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     min-width: 320px;
 }
-
-#center {
-    
-    background-color: rgb(255, 255, 255); 
+#center {    
+    background-color: #FFFFFF; 
     border-radius: 6px;
     border: 1px rgb(5, 5, 5) solid;
     margin: 0 auto;
@@ -16,9 +14,7 @@ body {
     width: 75%;
     padding: 10px;
     padding-top: 20px;
-
 }
-
 .input-field {
     height: 20px;
     padding: 5px;
@@ -26,15 +22,19 @@ body {
     width: 280px;
 
 }
+#comments{
+    height: 50px; 
+    resize: vertical;
+}
 
+#preferences{
+    list-style: none;
+}
 @media screen and (max-width: 833px){
     .input-field {
         width: 80%;
     }
 }
-
-
-
 .labels {
     display: inline-block;
     text-align: right;
@@ -43,16 +43,12 @@ body {
     vertical-align: top;
     margin-top: 10px;
 }
-
-.rightTab{
+.righ-tab{
     display: inline-block;
     text-align: left;
     width: 48%;
     vertical-align: middle;
 }
-
-
-
 .dropdown{
     height: 33px;
     width: 140px;
@@ -60,30 +56,25 @@ body {
     margin: 10px;
     margin-left: 10px;
 }
-
 .userRatings, input[type="checkbox"]{
-float: left;
-margin-right: 5px;
+    float: left;
+    margin-right: 5px;
 }
-
 .radio, .checkbox{
     display: block;
     position: relative;
     left: -43px;
     margin-left: 10px;
     padding-bottom: 10px;
-    
 }
-
 .comment-area{
     height: 97px;
     resize: vertical;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
 #submit{
-    background-color: rgb(122, 253, 247);
+    background-color: #7afdf7;
     margin: 10px;
     width: 90px;
     height: 36px;
@@ -93,11 +84,8 @@ margin-right: 5px;
     border: 1px solid;
     font-size: 1em;
 }
-
-
-#title {
-    font-weight: 60;
-    text-align: center;
-    
+#container-survey-form {
+    font-weight: 100;
+    text-align: center;    
   }
 
