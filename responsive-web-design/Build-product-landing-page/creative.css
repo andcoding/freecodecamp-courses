@@ -5,8 +5,7 @@
 }
 
 body {
-    /* background-color: #fda635; */
-    background-image: linear-gradient( 115deg, #ed4b4bba, #285da2a6, #834343), url(https://thewindow.barneys.com/wp-content/uploads/2017/11/4600_readyforretouching.jpg);
+    background-image: linear-gradient( 115deg, #ed4b4bba, #285da2a6, #834343), url(backgroundimg.jpg);
     font-family: 'Open Sans', sans-serif;
     color: black;
     width: -webkit-fill-available;
@@ -21,9 +20,7 @@ body {
     align-items: center;
     position: fixed;
     width: 100%;
-    /* box-shadow: 5px 5px 5px #de2222; */
     background-color: #f11a1ae6;
-    /* background-image: linear-gradient(45deg, black, transparent); */
 }
 
 .logo{
@@ -33,9 +30,9 @@ body {
 }
 
 #header-img{    
-display: flex;    
-width: 150px;    
-height: 65px;
+   display: flex;    
+   width: 150px;    
+   height: 65px;
 }
 #header > nav > ul > li {
     display: inline-block;
@@ -45,7 +42,6 @@ height: 65px;
     margin-right: 30px;
     font-size: large;
     font-weight: 500;
-    /* color: cyan; */
 }
 
 #form-elements{
@@ -58,13 +54,11 @@ height: 65px;
     margin: 0px;
 }
 
-
 #nav-bar{
     display: flex;
     justify-content: flex-end;
-     width: inherit;
+    width: inherit;
     }
-
 
 .container{
     max-width: 1000px;
@@ -74,8 +68,6 @@ height: 65px;
 
 #features{
     margin-top: -40px;
-    /* display: flex; */
-    /* flex-direction: column; */
 }
 
 .grid{
@@ -89,43 +81,23 @@ height: 65px;
     justify-content: center;
     height: 84px;
     width: 12vw;
-    color: cyan;
+    color: #030303;
 }
 
-.grid .men-shoes{
+.grid .right-element{
     display: flex;
     justify-content: center;
     flex-direction: column;
     height: 109px;
     padding: 5px;
     font-weight: 700;
-}
-
-.grid .women-shoes{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 109px;
-    padding: 5px;
-    font-weight: 700;
-}
-
-.grid .custom-design{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 109px;
-    padding: 5px;
-    font-weight: 700;
-}
-
+} 
 
 #how-it-works{
-    margin-top: 0px;
+    margin-top: 43px;
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-bottom: 0px;
 }
 
 #video{
@@ -178,7 +150,7 @@ height: 65px;
 .product > button {
     border: 0;
     margin: 15px 0;
-    background-color: cyan;
+    background-color: #1000ffc9;
     font-weight: 400;
 }
 
@@ -189,7 +161,6 @@ height: 65px;
     font-weight: 900;
     text-transform: uppercase;
     border-radius: 3px;
-    /* background: transparent; */
     cursor: pointer;
 }
 footer {
@@ -218,16 +189,12 @@ footer > span {
 }
 
 
-/*Screen size for iphone x */
 @media (max-width: 767px) {
     .link-buttons{
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       /* cursor: pointer; */
-       /* text-align: CENTER; */
-       width: 100%;
-       /* background: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     }
     .container{
     display: flex;
@@ -246,14 +213,8 @@ footer > span {
 }
 #header nav ul li {
     display: flex;
-    /* text-align: right; */
-    /* align-items: center; */
-    padding: 3px;
-    /* cursor: pointer; */
-    /* margin-right: 30px; */
-    /* font-size: large; */
+    padding: 3px;       
     font-weight: 100;
-    /* color: cyan; */
 }
 #header {
     display: flex;
@@ -262,7 +223,6 @@ footer > span {
 }
 #form-elements{
     display: flex;
-    /* align-items: center; */
     justify-content: flex-end;
     text-align: -webkit-center;
     margin-bottom: 40px;
@@ -271,40 +231,29 @@ footer > span {
 .logo {
     display: flex;
     justify-content: center;
-    /* width: -webkit-fill-available; */
     width: 100%;
-    /* text-align: center; */
 }
 
 #features {
     margin-top: 0px;
 }
 
-#pricing{
-    
-display: flex;
-    
-flex-direction: column;
-    
-/* width: 100%; */
-    
-align-items: center;
+#pricing{    
+   display: flex;        
+   flex-direction: column;      
+   align-items: center;
 }
 .product{
-    /* display:flex; */
-    width: 90%;
+   width: 90%;
 }
 
 #features .icon {
-    display: none;
+   display: none;
 }
 
 #features .grid {
-
-margin-bottom: 70px;
-
+  margin-bottom: 70px;
 }
-
 
 }
 
