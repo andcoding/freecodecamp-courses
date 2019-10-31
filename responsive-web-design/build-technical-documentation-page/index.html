@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="create.css">
+    <title>Technical-Documentation-Page</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Go Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Installing_Go">Installing Go</a></li>
+            <li><a class="nav-link" href="#Learning_Go">Learning Go</a></li>
+            <li><a class="nav-link" href="#References">References</a></li>
+            <li><a class="nav-link" href="#Articles">Articles</a></li>
+            <li><a class="nav-link" href="#Talks">Talks</a></li>
+            <li><a class="nav-link" href="#Non_English_Documentation">Non English Documentation</a></li>
+        </ul>
+
+    </nav>
+    <main id="main-doc">
+
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+
+            <article>
+                <p>The Go programming language is an open source project to make programmers more productive.</p>
+                <p>Go is expressive, concise, clean, and efficient. Its concurrency mechanisms make it easy to write
+                    programs that get the most out of multicore and networked machines, while its novel type system
+                    enables flexible and modular program construction. Go compiles quickly to machine code yet has the
+                    convenience of garbage collection and the power of run-time reflection. It's a fast, statically
+                    typed,
+                    compiled language that feels like a dynamically typed, interpreted language.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Installing_Go">
+            <header>Installing Go</header>
+            <article>
+                <h3>Getting Started</h3>
+                <p>Instructions for downloading and installing the Go compilers, tools, and libraries.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Learning_Go">
+            <header>Learning Go</header>
+            <h3>A Tour of Go</h3>
+            <article>
+                <p>An interactive introduction to Go in three sections. The first section covers basic syntax and data
+                    structures; the second discusses methods and interfaces; and the third introduces Go's concurrency
+                    primitives. Each section concludes with a few exercises so you can practice what you've learned. You
+                    can
+                    take the tour online or install it locally with:</p>
+                <code>$ go get golang.org/x/tour</code>
+                <p>This will place the tour binary in your workspace's bin directory.</p>
+                <h3>How to write Go code</h3>
+                <p>Also available as a screencast, this doc explains how to use the go command to fetch, build, and
+                    install
+                    packages, commands, and run tests.</p>
+                <code>package main
+                        import "fmt"                        
+                        func main() {
+                            fmt.Println("Hello, world.")
+                        }</code>
+                <p>Create a file named wiki.go, open it in your favorite editor, and add the following lines:</p>
+                <code>package main
+
+                                import (
+                                    "fmt"
+                                    "io/ioutil"
+                                )</code>
+                <p>Data Structure</p>
+                <code>type Page struct {
+                                        Title string
+                                        Body  []byte
+                                    }</code>
+                <p>Introducing the net/http package (an interlude)</p>
+                <code>package main
+
+                                            import (
+                                                "fmt"
+                                                "log"
+                                                "net/http"
+                                            )
+                                            
+                                            func handler(w http.ResponseWriter, r *http.Request) {
+                                                fmt.Fprintf(w, "Hi there, I love %s!", r.URL.Path[1:])
+                                            }
+                                            
+                                            func main() {
+                                                http.HandleFunc("/", handler)
+                                                log.Fatal(http.ListenAndServe(":8080", nil))
+                                            }</code>
+                <h3>Editor plugins and IDEs </h3>
+                <p>A document that summarizes commonly used editor plugins and IDEs with Go support.</p>
+                <h3>Effective Go </h3>
+                <p>A document that gives tips for writing clear, idiomatic Go code. A must read for any new Go
+                    programmer.
+                    It augments the tour and the language specification, both of which should be read first.</p>
+                <h3>Diagnostics</h3>
+                <p>Summarizes tools and methodologies to diagnose problems in Go programs.</p>
+                <h3>Frequently Asked Questions (FAQ)</h3>
+                <p>Answers to common questions about Go.</p>
+                <h3>The Go Wiki </h3>
+                <p>A wiki maintained by the Go community.</p>
+            </article>
+        </section>
+        <section class="main-section" id="References">
+            <header>References</header>
+            <article>
+                <h3>Package Documentation</h3>
+                <p>The documentation for the Go standard library.</p>
+                <h3>Command Documentation</h3>
+                <p>The documentation for the Go tools.</p>
+                <h3>Language Specification</h3>
+                <p>The official Go Language specification.</p>
+                <h3>The Go Memory Model</h3>
+                <p>A document that specifies the conditions under which reads of a variable in one goroutine can be
+                    guaranteed to observe values produced by writes to the same variable in a different goroutine.</p>
+                <h3>Release History</h3>
+                <p>A summary of the changes between Go releases.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Articles">
+            <header>Articles</header>
+            <article>
+                <h3>The Go Blog</h3>
+                <p>The official blog of the Go project, featuring news and in-depth articles by the Go team and guests.
+                </p>
+                <p>Guided tour of Go Program</p>
+                <ul>
+                    <li>First-Class Functions in Go</li>
+                    <li>Generating arbitrary text: a Markov chain algorithm</li>
+                    <li>Share Memory by Communicating</li>
+                    <li>Writing Web Applications - building a simple web application.</li>
+                </ul>
+
+                <p>Modules</p>
+                <ul>
+                    <li>Using Go Modules - an introduction to using modules in a simple project.</li>
+                    <li>Migrating to Go Modules - converting an existing project to use modules.</li>
+                    <li>Publishing Go Modules - how to make new versions of modules available to others.</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Talks">
+            <header>Talks</header>
+            <article>
+                <h3>A Video Tour of Go</h3>
+                <p>Three things that make Go fast, fun, and productive: interfaces, reflection, and concurrency. Builds
+                    a
+                    toy web crawler to demonstrate these.</p>
+                <h3>Code that grows with grace</h3>
+                <p>One of Go's key design goals is code adaptability; that it should be easy to take a simple design and
+                    build upon it in a clean and natural way. In this talk Andrew Gerrand describes a simple "chat
+                    roulette"
+                    server that matches pairs of incoming TCP connections, and then use Go's concurrency mechanisms,
+                    interfaces, and standard library to extend it with a web interface and other features. While the
+                    function of the program changes dramatically, Go's flexibility preserves the original design as it
+                    grows.</p>
+                <h3>Go Concurrency Patterns</h3>
+                <p>Concurrency is the key to designing high performance network services. Go's concurrency primitives
+                    (goroutines and channels) provide a simple and efficient means of expressing concurrent execution.
+                    In
+                    this talk we see how tricky concurrency problems can be solved gracefully with simple Go code.</p>
+                <h3>Advanced Go Concurrency Patterns</h3>
+                <p>This talk expands on the Go Concurrency Patterns talk to dive deeper into Go's concurrency
+                    primitives.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Non_English_Documentation">
+            <header>Non English Documentation</header>
+            <article>
+                <p>See the NonEnglish page at the Wiki for localized documentation.</p>
+            </article>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
