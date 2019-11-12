@@ -201,17 +201,17 @@ footer  span {
 }
 
 @media (max-width: 767px) {
-    .link-buttons{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    .container{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
+.link-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+ }
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
 #nav-bar{
     display: flex;
