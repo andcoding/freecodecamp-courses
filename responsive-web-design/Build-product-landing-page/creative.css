@@ -10,6 +10,7 @@ body {
     width: -webkit-fill-available;
     height: fit-content;
 }
+
 #page-wrapper{
     position: relative;
 }
@@ -28,12 +29,14 @@ body {
     text-align: center;
 }
 
+
 #header-img{    
    display: flex;    
    width: 150px;    
    height: 65px;
 }
-#header > nav > ul > li {
+
+#header  nav  ul  li {
     display: inline-block;
     text-align: right;
     padding: 1px 10px 10px 10px;
@@ -79,7 +82,7 @@ body {
     margin-bottom: 30px;
 }
 
-.grid > .icon > .material-icons{
+.grid  .icon  .material-icons{
     display: flex;
     align-items: center;
     font-size: 47px;
@@ -128,7 +131,7 @@ body {
     border-radius: 3px;
 }
 
-.product > .level{
+.product  .level{
     background-color: rgb(8, 8, 8);
     color: white;
     padding: 15px 0;
@@ -137,21 +140,22 @@ body {
     font-weight: 800;
 }
 
-.product > h2{
+.product  h2{
     margin-top: 15px;
 }
 
-.product > ol{
+.product  ol{
     margin: 15px 0;
     font-weight: 600;
     list-style: none;
 }
-.product > ol > li{
+
+.product  ol  li{
     padding: 4px 0;
     text-align: justify;
 }
 
-.product > button {
+.product  button {
     border: 0;
     margin: 15px 0;
     background-color: #eee;
@@ -167,6 +171,7 @@ body {
     border-radius: 3px;
     cursor: pointer;
 }
+
 footer {
     background: cornsilk;
     padding: 3px 20px 8px 20px;
@@ -174,17 +179,19 @@ footer {
     border-radius: 5px;
     background-color: #de2222;
 }
-footer > ul{
+
+footer ul{
     display: flex;
     justify-content: flex-end;
     padding: 0px;
     list-style: none;
 }
-footer > ul > li {
+
+footer ul  li {
     padding: 10px;
 }
 
-footer > span {
+footer  span {
     margin-top: 0px;
     display: flex;
     justify-content: flex-end;
@@ -193,40 +200,43 @@ footer > span {
     padding: 0px 10px;
 }
 
-
 @media (max-width: 767px) {
     .link-buttons{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
     .container{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
+
 #nav-bar{
     display: flex;
     justify-content: flex-end;
     width: inherit;
 }
     
-#nav-bar > li{
+#nav-bar li{
     text-align:  center;
     width: 100%;
     margin: auto;
 }
+
 #header nav ul li {
     display: flex;
     padding: 3px;       
     font-weight: 100;
 }
+
 #header {
     display: flex;
     flex-flow: wrap;
     width: 100%;
 }
+
 #form-elements{
     display: flex;
     justify-content: flex-end;
@@ -234,6 +244,7 @@ footer > span {
     margin-bottom: 40px;
     height: 338px;
 }
+
 .logo {
     display: flex;
     justify-content: center;
@@ -258,8 +269,8 @@ footer > span {
 }
 
 #features .grid {
-   margin-bottom: 70px;
-}
+    margin-bottom: 70px;
+    }
 }
 
 
